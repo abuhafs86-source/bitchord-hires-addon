@@ -91,7 +91,7 @@ Tocá *Test* para el health check.
 ### Configuración incluida
 
 - `bitchordAuth: true` — solo la app oficial de BitChord puede consultar `/search`, `/stream` y `/health`. El manifest queda público. Ver *Addon auth* abajo.
-- `checkValidLossless: 1` — el addon solo se consulta con una salida capaz de lossless (cable, USB, HDMI, o BT LDAC/LHDC/aptX Lossless). Con BT normal no se le habla. En la lista aparece *Needs a lossless output*.
+- `checkValidLossless: 0` — el addon solo se consulta con una salida capaz de lossless (cable, USB, HDMI, o BT LDAC/LHDC/aptX Lossless). Con BT normal no se le habla. En la lista aparece *Needs a lossless output*.
 - `allowDownloads: 1` — las descargas salen de este addon, así que se guardan en FLAC. Si una fuente falla, el failover resuelve la pista en otra; si el addon devuelve 404, BitChord cae a la siguiente fuente.
 - `settings.quality` — `lossless` / `high` / `low`. BitChord reenvía el valor elegido en `/search` y `/stream`.
 
